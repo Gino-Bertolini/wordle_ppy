@@ -2,12 +2,10 @@ var INPUT = document.getElementById('guess-input')
 var BOTON = document.getElementById("guess-button")
 const GRID = document.getElementById("grid");
 
-
-
-
-
 BOTON.addEventListener('click', intentar)
-var palabra = "PANEL";
+var palabras = ["ANGEL","JAPAN","LARGO","CINCO","LAPIZ"];
+var palabra = palabras[(Math.random()*5).toFixed(0)];
+
 var intentos = 6;
 
 function intentar() {
